@@ -1,0 +1,48 @@
+trước tiên người dùng đăng nhập vào máy chủ xác thực bằng cách 
+sử dụng hệ thống đăng nhập của máy chủ (ví dụ: 
+username và password, Facebook login, Google login, etc). 
+Server xác thực sau đó tạo JWT và gửi nó cho người dùng. 
+Khi người dùng thực hiện các lần gọi API đến ứng dụng, người dùng chuyển JWT cùng với cuộc gọi API.
+ Trong thiết lập này, server của ứng dụng sẽ được cấu hình để xác minh rằng JWT đến
+  được tạo ra bởi server xác thực. Vì vậy, khi người dùng thực hiện các cuộc gọi API 
+  đính kèm JWT, ứng dụng có thể sử dụng JWT để xác minh rằng cuộc gọi
+   API đến từ một người dùng đã được xác thực
+
+
+phương thức split 
+ split([separator], [limit]);
+  Tham số separator
+
+  Tham số separator là dấu phân tách, xác định vị trí mỗi lần phân tách sẽ xảy ra trong chuỗi ban đầu.
+
+   Nếu bạn bỏ quên dấu phân tách, thì split() không thể tìm thấy dấu phân tách trong chuỗi. Thế nên, trong trường hợp này, split() sẽ trả về toàn bộ chuỗi.
+    Tham số limit là giới hạn. Nó chỉ định số chuỗi con được phân tách. Phương thức split() sẽ dừng khi số lượng chuỗi con đạt đến giới hạn.
+
+Ví dụ sau sử dụng phương thức split() để chia một chuỗi thành các từ:
+let str = "Học JavaScript hay Web?";
+
+// Sử dụng split() để tách chuỗi -> từ
+let substrings = str.split(" ");
+
+console.log(substrings);
+ // ["Học", "JavaScript", "hay", "Web"]
+
+ let str = "Học JavaScript hay Web?";
+
+// Sử dụng split()
+let substrings = str.split(" ", 2);
+
+console.log(substrings);
+
+
+Kết quả ta được:
+
+["Học", "JavaScript"]
+ 
+
+ REQUEST.header 
+  In the following snippet, we create a new request using the Request() constructor (for an image file in the same directory as the script), 
+  then save the request headers in a variable: 
+
+var myRequest = new Request('flowers.jpg');
+var myHeaders = myRequest.headers; // Headers {}

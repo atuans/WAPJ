@@ -1,0 +1,36 @@
+{
+  "name": "mern-project",
+  "version": "1.0.0",
+  "description": "webappPJ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon backend/server.js",
+    "dev": "nodemon/backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atuans/WAPJ.git"
+  },
+  "author": "NHAT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atuans/WAPJ/issues"
+  },
+  "homepage": "https://github.com/atuans/WAPJ#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.5",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.3",
+    "nodemailer": "^6.7.5",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
