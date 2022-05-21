@@ -49,7 +49,11 @@ Online purchasing has risen in popularity in recent years. Customers can buy goo
 # 6. References
 
 https://mongoosejs.com/docs/index.html
+
 https://www.mongodb.com/docs/manual/tutorial/insert-documents/
+
 https://viblo.asia/p/5-buoc-don-gian-de-hieu-ve-jwt-json-web-tokens-L4x5xwQqlBM
+
 https://www.geeksforgeeks.org/node-js-utility-module/
+
 https://docs.npmjs.com/
