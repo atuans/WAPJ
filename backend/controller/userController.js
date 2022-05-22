@@ -1,6 +1,8 @@
 const ErrorHandle = require('../utils/ErrorHandle');
 const User = require('../models/userModel')
-const catchAsyncError = require('../middleware/catchAsyncError')
+const catchAsyncError = require('../middleware/catchAsyncError');
+const sendToken = require('../utils/jwtToken');
+const crypto = require('crypto')
 
 // User Register
 
@@ -18,12 +20,13 @@ exports.registerUser = catchAsyncError(async (req, res, next) => {
         },
 
     });
-    const token = user.getJWTToken();
-    res.status(201).json({
-        success:true,
-        user,
-        token,
-    })
+    // const token = user.getJWTToken();
+    // res.status(201).json({
+    //     success:true,
+    //     user,
+    //     token,
+    // })
+    sendToken(user,201,res);
 })
 
 // login user
@@ -46,11 +49,48 @@ exports.loginUser = catchAsyncError(async(req,res,next)=>{
         return next(new ErrorHandle("Invalid email or password",401)); // unauthorized error
     }
 
-    const token = user.getJWTToken();
-    res.status(201).json({
-        success:true,
-        user,
-        token,
-    })
+    // const token = user.getJWTToken();
+    // res.status(201).json({
+    //     success:true,
+    //     user,
+    //     token,
+    // })    
+    sendToken(user, 200, res);
 });
 
+
+//logout user
+
+exports.logoutUser = catchAsyncError(async(req,res,next)=>{
+
+    res.cookie("token",null,{
+        expires:new Date(Date.now()),
+        httpOnly:true,
+    })
+
+    res.status(200).json({
+        success:true,
+        message: "You have been logged out",
+    });
+})
+
+
+// Forget password
+
+exports.ForgotPassword = catchAsyncError(async(req,res,next)=>{
+    
+    const user = await User.findOne({
+        email: req.body.email
+    });
+
+    if(!user){
+        return next(new ErrorHandle("user not found",404));
+    }
+
+    // get resetPassword token
+    const resetToken= user.getResetPasswordToken();
+
+    await user.save({ validateBeforeSave: false});
+
+    const resetPasswordUrl = `${req.protocol}://${req.get("host")}/api/v1/password/reset/${resetToken}`
+})

@@ -5,6 +5,9 @@ const apiFeatures = require('../utils/apiFeatures')
 
 // create product - Role : Admin
 exports.createProduct = catchAsyncError( async (req,res,next)=>{
+    
+    req.body.user = req.user.id
+    
     const product = await Product.create(req.body);
 
     //send back data to client side
