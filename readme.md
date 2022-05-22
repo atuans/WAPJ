@@ -29,8 +29,11 @@ Online purchasing has risen in popularity in recent years. Customers can buy goo
 ## 1.4. Other things
 # 2. Feature
 # 3. Language, libraries, platform or framework to build applications/topics
-- Technology used: Node/expressjs, mongodb, mongoose, MVC Model, Resful API
-- Tools: Visual studio, postman, mongoDB compass
+- Technology used: Node/expressjs, mongodb, mongoose, MVC Model, Resful API model
+- Tools: Visual Studio Code for coding
+-       ,Postman for testing API
+-       ,MongoDB Compass for store data
+-       ,...
 # 4. Team members and jobs
 - Team Members:
   - Vu Hoang Nam - ID: ITITIU19033
