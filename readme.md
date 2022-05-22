@@ -60,3 +60,5 @@ https://viblo.asia/p/5-buoc-don-gian-de-hieu-ve-jwt-json-web-tokens-L4x5xwQqlBM
 https://www.geeksforgeeks.org/node-js-utility-module/
 
 https://docs.npmjs.com/
+
+https://sailsjs.com/documentation/reference/request-req
