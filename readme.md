@@ -22,18 +22,21 @@ Online purchasing has risen in popularity in recent years. Customers can buy goo
 ## 1.2. Why our team chose this topic?
 
 ## 1.3. Some images of similar topics
-![markdown](1.jpg)
-![markdown](2.jpg)
-![markdown](3.jpg)
 
 ## 1.4. Other things
 # 2. Feature
 # 3. Language, libraries, platform or framework to build applications/topics
-- Technology used: Node/expressjs, mongodb, mongoose, MVC Model, Resful API model
-- Tools: Visual Studio Code for coding
--       ,Postman for testing API
--       ,MongoDB Compass for store data
--       ,...
+- Technology used: 
+  ![Node/expressjs](https://img.shields.io/badge/Node/expressjs-43853D.svg?style=flat-square&logo=node.js&logoColor=white)
+  ![MongoDB](https://img.shields.io/badge/MongoDB-4ea94b.svg?style=flat-square&logo=MongoDB&logoColor=white&color=red)
+  ![Mongoose](https://img.shields.io/badge/Mongoose-4ea94b.svg?style=flat-square&logo=&logoColor=white&color=yellow)
+  ![MVC Model](https://img.shields.io/badge/MVC%20Model-4ea94b.svg?style=flat-square&logo=&logoColor=white&color=blueviolet)
+  ![Resful API Model](https://img.shields.io/badge/Resful%20API%20Model-4ea94b.svg?style=flat-square&logo=&logoColor=white&color=orange)
+- Tools: 
+  ![VScode](https://img.shields.io/badge/VScode-43853D.svg?style=flat-square&logo=VisualStudioCode&logoColor=white&color=blue)
+  ![Postman](https://img.shields.io/badge/Postman-43853D.svg?style=flat-square&logo=Postman&logoColor=white)
+  ![MongoDB](https://img.shields.io/badge/MongoDB-4ea94b.svg?style=flat-square&logo=MongoDB&logoColor=white&color=red)
+  ...
 # 4. Team members and jobs
 - Team Members:
   - Vu Hoang Nam - ID: ITITIU19033
