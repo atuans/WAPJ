@@ -1,0 +1,134 @@
+install command 
+
+npm install mongoose save 
+
+include mongoose in our project and open a connection to the test database on our locally running instance of MongoDB.
+
+const mongoose = require('mongoose');
+
+main().catch(err => console.log(err));
+
+async function main(){
+    await mongoose.connect('mongodb://localhost:27017/test');
+
+}
+
+assume that following code is within the main() function 
+with Mongoose, everything is derived from a Schema
+
+const kittySchema = new mongoose.Schema({
+    name:String
+});
+So, we have a schema with one property, name which will be a String 
+
+
+ // COMPILING OUR SCHEMA INTO A MODEL 
+
+const Kitten  = mongoose.model('Kitten',kittySchema);
+
+-- a model is a class which we construct documents
+-- let create a kitten document 
+
+const silence = new Kitten({
+    name: 'Silence'
+});
+console.log(silence.name); // silence
+
+-- add 'speak' functionality to our document
+
+kittySchema.methods.speak = function speak(){
+    const greeting = this.name ? "   Meow name is" + this.name: "I dont have a name";
+    console.log(greeting);
+
+};
+const Kitten = mongoose.model('Kitten',kittySchema);
+
+// function added to the methods property of schema get compiled into the Model prototype 
+
+const fluffy = new Kitten({ name:"fluffy"});
+fluffy.speak(); // Meow name is fluffy
+
+
+-- Each document can be saved to the database by calling save() method 
+
+await fluffy.save();
+fluffy.speak();
+
+//display all the kitten we have seen. We can access all of the kitten documents through out
+kitten model
+const kittens = await Kitten.find();
+console.log(kittens)
+
+-- if we want to filter out kitten by name, Mongoose support syntax 'find'
+
+await Kitten.find({ 
+    name" /^fluff/
+})
+=> this performs a search for all documents with a name property that begins with fluff and return the result as an array
+
+
+
+
+
+/************************************SCHEMA*******************************************/
+
+Everything in Mongoose starts with a Schema. Each schema maps to a MongoDB collection and defines the shape of the documents within that collection.
+
+import mongoose from 'mongoose';
+const { Schema } = mongoose;
+const blogSchema = new Schema({
+  title:  String, // String is shorthand for {type: String}
+  author: String,
+  body:   String,
+  comments: [{ body: String, date: Date }],
+  date: { type: Date, default: Date.now },
+  hidden: Boolean,
+  meta: {
+    votes: Number,
+    favs:  Number
+  }
+});
+
+-- creating model 
+
+const Blog = mongooose.model('Blog',blogSchema)
+
+// by default, mongoose add an _id to your schemas
+
+const schema = new Schema();
+schema.path('_id');  // ObjectID
+
+
+--EX2 
+
+// define a schema
+const animalSchema = new Schema({ name: String, type: String });
+
+// assign a function to the "methods" object of our animalSchema
+animalSchema.methods.findSimilarTypes = function(cb) {
+  return mongoose.model('Animal').find({ type: this.type }, cb);
+};
+
+// Now all of our animal instances have a findSimilarTypes method available to them.
+
+const Animal = mongoose.model('Animal', animalSchema);
+const dog = new Animal({ type: 'dog' });
+
+dog.findSimilarTypes((err, dogs) => {
+  console.log(dogs); // woof
+});
+
+ Compound Indexes
+ where a single index structure holds references to multiple fields 
+ Indexes store references to fields in either ascending (1) or descending (-1) sort order
+ return results sorted first by ascending username values and then by descending (i.e. more recent to last) date values,
+
+ db.events.find().sort( { username: 1, date: -1 } )
+descending username values and then by ascending date values, such as:
+db.events.find().sort( { username: -1, date: 1 } )
+
+
+--This means that indexes will only be ensured once during the lifetime of your app
+var User = new Schema({
+    name: { type: String, index: true }
+})

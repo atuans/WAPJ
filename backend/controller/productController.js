@@ -59,7 +59,6 @@ exports.getProductDetails = catchAsyncError( async(req,res,next) =>{
     })
 });
 
-
 // update product
 
 exports.updateProduct = catchAsyncError( async (req,res,next) =>{
@@ -105,6 +104,7 @@ exports.deleteProduct = catchAsyncError (async(req,res,next)=>{
     //     })
     // }
 
+
     if(!product){
         return next(new ErrorHandle('Product not found',404));
         }
@@ -115,3 +115,114 @@ exports.deleteProduct = catchAsyncError (async(req,res,next)=>{
         message:"Product deleted successfully"
     })
 });
+
+// create new Reviews, - Update Reviews
+
+exports.createProductReview = catchAsyncError(async(req,res,next)=>{
+
+    const {productId, comment, rating} = req.body;
+
+    const review = {
+        user: req.user._id,
+        name: req.user.name,
+        rating:Number(rating),
+        comment,
+    }
+
+    const product = await Product.findById(productId);
+    const isReviewed = product.reviews.find(
+        rev => rev.user.toString() === req.user._id.toString()
+    );
+
+
+    if(isReviewed){
+        product.reviews.forEach((rev) => {
+           if(rev => rev.user.toString() === req.user._id.toString())
+            (rev.rating = rating),
+            (rev.comment = comment); 
+        });
+
+    }
+    else{
+        product.reviews.push(review);
+        product.numOfReviews = product.reviews.length
+    }
+
+    let avgRating = 0;
+
+    product.reviews.forEach((rev) =>{
+        avgRating += rev.rating;
+    })
+
+    product.ratings = avgRating/product.reviews.length;
+
+    await product.save({ validateBeforeSave: false });
+
+    res.status(200).json({
+        success:true,
+        
+    })
+})
+// Get all Reviews of product
+
+exports.getProductReviews = catchAsyncError(async(req,res,next) =>{
+
+    const product = await Product.findById(req.query.id);
+
+    if(!product){
+        return next(new ErrorHandle(`Product not found`),404);
+    }
+
+    res.status(200).json({
+        success:true,
+        reviews: product.reviews,
+    });
+});
+
+
+// delete reviews
+exports.deleteReviews = catchAsyncError(async (req, res, next) => {
+    const product = await Product.findById(req.query.productId);
+  
+    if (!product) {
+      return next(new ErrorHandle("Product not found", 404));
+    }
+  
+    const reviews = product.reviews.filter(
+      (rev) => rev._id.toString() !== req.query.id.toString()
+    );
+  
+    let avg = 0;
+  
+    reviews.forEach((rev) => {
+      avg += rev.rating;
+    });
+  
+    let ratings = 0;
+  
+    if (reviews.length === 0) {
+      ratings = 0;
+    } else {
+      ratings = avg / reviews.length;
+    }
+  
+    const numOfReviews = reviews.length;
+  
+    await Product.findByIdAndUpdate(
+      req.query.productId,
+      {
+        reviews,
+        ratings,
+        numOfReviews,
+      },
+      {
+        new: true,
+        runValidators: true,
+        useFindAndModify: false,
+      }
+    );
+  
+    res.status(200).json({
+      success: true,
+    });
+  });
