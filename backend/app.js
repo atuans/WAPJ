@@ -10,12 +10,15 @@ app.use(cookieParser())
 //route imports
 const product = require('./routes/productRoute')
 const user = require('./routes/userRoutes')
+const order = require('./routes/orderRoute');
 
 //product
-app.use('/api/v1',product)
+app.use('/api/v1',product);
 //user 
-app.use('/api/v1',user)
+app.use('/api/v1',user);
 // middleware error import
 app.use(errorMiddleware);
+//order
+app.use('/api/v1',order);
 
 module.exports = app;
