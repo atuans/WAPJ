@@ -11,8 +11,13 @@ Table of contents
   - [5.1. Use cases design](#51-use-cases-design)
   - [5.2. Database design](#52-database-design)
   - [5.3. Interface design](#53-interface-design)
-- [6. Conclusion](#6-conclusion)
-- [7. References](#7-references)
+- [6. Run demo](#6-run-demo)
+  - [6.1. Setup Tools](#61-setup-tools)
+  - [6.2. Run frontend and backend](#62-run-frontend-and-backend)
+  - [6.3. Login by admin](#63-login-by-admin)
+  - [6.4. Website demo](#64-website-demo)
+- [7. Conclusion](#7-conclusion)
+- [8. References](#8-references)
 # 1. Project Description
 
 ## 1.1. Describe the topic and why you choose it
@@ -71,12 +76,22 @@ Online purchasing has risen in popularity in recent years. Customers can buy goo
 
 ## 5.3. Interface design
 
-# 6. Conclusion
+# 6. Run demo
+
+## 6.1. Setup Tools
+
+## 6.2. Run frontend and backend
+
+## 6.3. Login by admin
+
+## 6.4. Website demo
+
+# 7. Conclusion
 In recent years, technology has evolved tremendously to give consumers with a better online shopping experience, and this trend is projected to continue. Many people believe that as the quantity of products and brands available expands, online shopping will eventually supersede in-store shopping. While this is true in some cases, there is still a demand for physical storefronts in areas where customers prefer to see and touch the products they are purchasing.
 We made progress on the project by solving challenges, rationally dividing responsibilities for members, controlling each member's time and progress, and dealing with a project with a team over a period of time. This gave us valuable experience that we may apply in the future. We learned how to design a mobile app, a logical database that is appropriate for the project, and how to connect it to the programming language. One of the most effective ways to learn additional algorithms and optimize them is to work on a project.
 Designing a good program architecture and analyzing customer needs, as well as transforming real-life scenarios into efficient code, are some of the major things we learned.
 As a result, in addition to gaining a better understanding of database structure, this project also aids us in improving our programming skills.
-# 7. References
+# 8. References
 
 https://mongoosejs.com/docs/index.html
 
