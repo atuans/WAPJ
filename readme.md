@@ -30,23 +30,17 @@ Online purchasing has risen in popularity in recent years. Customers can buy goo
 # 2. Feature
 # 3. Language, libraries, platform or framework
 - Libraries declared:
-  overlay-navbar
-  webfontloader
-  browser-router
-  stripe/react-stripe-js
-  react-icons
-  react-alert
+  overlay-navbar,
+  webfontloader,
+  browser-router,
+  stripe/react-stripe-js,
+  react-icons,
+  react-alert,
   react-js-pagination
 
 - Language used:
-  ![Java](https://img.shields.io/badge/-Java-E34A86?style=flat-square&logo=java&logoColor=white)
-  ![PHP](https://img.shields.io/badge/PHP-777BB4.svg?style=flat-square&logo=php&logoColor=white)
   ![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat-square&logo=javascript&logoColor=white)
-  ![ReactJS](https://img.shields.io/badge/-ReactJS-%2361DAFB?style=flat-square&logo=react&logoColor=white)
-  ![Nodejs](https://img.shields.io/badge/Node.js-43853D.svg?style=flat-square&logo=node.js&logoColor=white)
-  ![Bootstrap](https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=bootstrap&logoColor=white)
-  ![MySQL](https://img.shields.io/badge/-MySQL-F29111?style=flat-square&logo=MySQL&logoColor=white)
-  
+
 - Technology used: 
   ![Node/expressjs](https://img.shields.io/badge/Node/expressjs-43853D.svg?style=flat-square&logo=node.js&logoColor=white)
   ![MongoDB](https://img.shields.io/badge/MongoDB-4ea94b.svg?style=flat-square&logo=MongoDB&logoColor=white&color=red)
