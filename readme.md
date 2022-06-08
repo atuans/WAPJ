@@ -29,6 +29,15 @@ Online purchasing has risen in popularity in recent years. Customers can buy goo
 ## 1.3. Other things
 # 2. Feature
 # 3. Language, libraries, platform or framework
+- Libraries declared:
+  overlay-navbar
+  webfontloader
+  browser-router
+  stripe/react-stripe-js
+  react-icons
+  react-alert
+  react-js-pagination
+
 - Language used:
   ![Java](https://img.shields.io/badge/-Java-E34A86?style=flat-square&logo=java&logoColor=white)
   ![PHP](https://img.shields.io/badge/PHP-777BB4.svg?style=flat-square&logo=php&logoColor=white)
@@ -104,3 +113,17 @@ https://www.geeksforgeeks.org/node-js-utility-module/
 https://docs.npmjs.com/
 
 https://sailsjs.com/documentation/reference/request-req
+
+https://www.geeksforgeeks.org/reactjs-router/
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+
+https://react-redux.js.org/api/hooks
+
+https://viblo.asia/p/redux-trong-react-la-gi-1Je5EDX0lnL
+
+https://v5.reactrouter.com/web/guides/quick-start
+
+https://viblo.asia/p/react-dispatcher-OeVKBwPQZkW
+
+https://tharong.com/dispatch-react-la-gi#cach-ma-redux-lam-viec
