@@ -121,3 +121,7 @@ https://v5.reactrouter.com/web/guides/quick-start
 https://viblo.asia/p/react-dispatcher-OeVKBwPQZkW
 
 https://tharong.com/dispatch-react-la-gi#cach-ma-redux-lam-viec
+
+https://viblo.asia/p/tim-hieu-ve-formdata-Az45bABwlxY
+
+https://openplanning.net/12333/javascript-filereader
