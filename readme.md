@@ -36,7 +36,8 @@ Online purchasing has risen in popularity in recent years. Customers can buy goo
   stripe/react-stripe-js,
   react-icons,
   react-alert,
-  react-js-pagination
+  react-js-pagination,
+  express-fileupload.
 
 - Language used:
   ![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat-square&logo=javascript&logoColor=white)
