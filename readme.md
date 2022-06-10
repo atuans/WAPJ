@@ -1,5 +1,3 @@
-Table of contents
-
 - [1. Project Description](#1-project-description)
   - [1.1. Describe the topic and why you choose it](#11-describe-the-topic-and-why-you-choose-it)
   - [1.2. Some images](#12-some-images)
@@ -8,9 +6,9 @@ Table of contents
 - [3. Language, libraries, platform or framework](#3-language-libraries-platform-or-framework)
 - [4. Team members and jobs](#4-team-members-and-jobs)
 - [5. Diagrams](#5-diagrams)
-  - [5.1. Use cases design](#51-use-cases-design)
-  - [5.2. Database design](#52-database-design)
-  - [5.3. Interface design](#53-interface-design)
+  - [5.1. Use cases diagram](#51-use-cases-diagram)
+  - [5.2. Class diagram](#52-class-diagram)
+  - [5.3. Sequence diagram](#53-sequence-diagram)
 - [6. Run demo](#6-run-demo)
   - [6.1. Setup Tools](#61-setup-tools)
   - [6.2. Run frontend and backend](#62-run-frontend-and-backend)
@@ -77,11 +75,26 @@ The benefits and elements that influence online shopping, online purchasing beha
 
 # 5. Diagrams
 
-## 5.1. Use cases design
+## 5.1. Use cases diagram
 
-## 5.2. Database design
+![image](https://scontent.fsgn5-3.fna.fbcdn.net/v/t1.15752-9/284926494_1969770326563910_8326952288694960551_n.png?_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_ohc=8_NnSSw4Kr4AX80W71x&_nc_ht=scontent.fsgn5-3.fna&oh=03_AVLxAAosAp6nF1PRQ5y-af9PgqFWJEUOCT7rF4o4CSZCiQ&oe=62C8D99E)
 
-## 5.3. Interface design
+## 5.2. Class diagram
+
+![image](https://scontent.fsgn5-5.fna.fbcdn.net/v/t1.15752-9/280655319_717622442813941_3460783179662170187_n.png?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=bCG95WctckEAX9YNKCE&_nc_ht=scontent.fsgn5-5.fna&oh=03_AVJT6pJ6QvDw8YbnBsrYt0-CT1zCci_4QbHJyiXlCPqJrg&oe=62C99D06)
+
+## 5.3. Sequence diagram
+- Register:
+
+![image](https://scontent.fsgn5-11.fna.fbcdn.net/v/t1.15752-9/282296990_427069085679275_8161185133586455597_n.png?_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_ohc=j2vT-Gl_r9sAX8IsViy&_nc_ht=scontent.fsgn5-11.fna&oh=03_AVL_lJuKGzFzI9KMLFM6Z6WmYBGYhChYfWprT_8A-DLdsw&oe=62C784FD)
+
+- Login(As an user):
+
+![image](https://user-images.githubusercontent.com/69331696/173090446-5b57df04-0ae3-48d2-b801-522f1009702f.png)
+
+- Login(As an admin):
+
+![image](https://scontent.fsgn5-13.fna.fbcdn.net/v/t1.15752-9/285643672_1184095405757261_9051762105766250190_n.png?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=ez7G7oB41EwAX-TylqU&_nc_ht=scontent.fsgn5-13.fna&oh=03_AVIF2C74VtjRklC8RFURMS-9apc_n7gI8mpi1kCB9yyAAg&oe=62C77D41)
 
 # 6. Run demo
 
@@ -129,3 +142,4 @@ https://tharong.com/dispatch-react-la-gi#cach-ma-redux-lam-viec
 https://viblo.asia/p/tim-hieu-ve-formdata-Az45bABwlxY
 
 https://openplanning.net/12333/javascript-filereader
+
