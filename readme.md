@@ -20,10 +20,13 @@ Table of contents
 - [8. References](#8-references)
 # 1. Project Description
 
-## 1.1. Describe the topic and why you choose it
+## 1.1. Describe the topic and motivation
 
 Online purchasing has risen in popularity in recent years. Customers can buy goods or services directly from a seller through the Internet using a web browser. Consumers find a product they want by going directly to a retailer's website or utilizing a shopping search engine to look for it among other sellers. Different electronic merchants have identical products. Customers can shop online using a range of machines and devices, including desktop computers, laptop computers, tablets, and smartphones.
 
+The goal of the study was to learn more about online shoppers' motivations and loyalty, as well as the procedure they use to purchase products and services online.
+
+The benefits and elements that influence online shopping, online purchasing behavior and patterns, and products that are suitable for online sales were all examined in the literature study. However, the consumers' perspective and approach to online purchasing, as well as the deeper decisions made during the online shopping process, were not covered.
 ## 1.2. Some images 
 
 ## 1.3. Other things
@@ -36,7 +39,8 @@ Online purchasing has risen in popularity in recent years. Customers can buy goo
   stripe/react-stripe-js,
   react-icons,
   react-alert,
-  react-js-pagination
+  react-js-pagination,
+  express-fileupload.
 
 - Language used:
   ![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat-square&logo=javascript&logoColor=white)
