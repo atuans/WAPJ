@@ -1,5 +1,3 @@
-Table of contents
-
 - [1. Project Description](#1-project-description)
   - [1.1. Describe the topic and why you choose it](#11-describe-the-topic-and-why-you-choose-it)
   - [1.2. Some images](#12-some-images)
@@ -8,9 +6,10 @@ Table of contents
 - [3. Language, libraries, platform or framework](#3-language-libraries-platform-or-framework)
 - [4. Team members and jobs](#4-team-members-and-jobs)
 - [5. Diagrams](#5-diagrams)
-  - [5.1. Use cases design](#51-use-cases-design)
-  - [5.2. Database design](#52-database-design)
-  - [5.3. Interface design](#53-interface-design)
+  - [5.1. Use cases diagram](#51-use-cases-diagram)
+  - [5.2. Class diagram](#52-class-diagram)
+  - [5.3. Activity diagram](#53-activity-diagram)
+  - [5.4. Sequence diagram](#54-sequence-diagram)
 - [6. Run demo](#6-run-demo)
   - [6.1. Setup Tools](#61-setup-tools)
   - [6.2. Run frontend and backend](#62-run-frontend-and-backend)
@@ -73,11 +72,13 @@ Online purchasing has risen in popularity in recent years. Customers can buy goo
 
 # 5. Diagrams
 
-## 5.1. Use cases design
+## 5.1. Use cases diagram
 
-## 5.2. Database design
+## 5.2. Class diagram
 
-## 5.3. Interface design
+## 5.3. Activity diagram
+
+## 5.4. Sequence diagram
 
 # 6. Run demo
 
