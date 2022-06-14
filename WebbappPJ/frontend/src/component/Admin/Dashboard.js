@@ -65,7 +65,7 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <MetaData title="Dashboard - Admin Panel" />
+      <MetaData title="Dashboard - Admin" />
       <Sidebar />
 
       <div className="dashboardContainer">
@@ -74,7 +74,7 @@ const Dashboard = () => {
         <div className="dashboardSummary">
           <div>
             <p>
-              Total Amount <br /> ₹{totalAmount}
+              Total Amount <br /> ${totalAmount}
             </p>
           </div>
           <div className="dashboardSummaryBox2">
